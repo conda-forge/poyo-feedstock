@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 {% set gh_org = "hackebrot" %}
 {% set gh_repo = "poyo" %}
 
@@ -10,7 +10,7 @@ package:
 source:
   fn: {{ gh_repo }}-{{ version }}.tar.gz
   url: https://github.com/{{ gh_org }}/{{ gh_repo }}/archive/{{ version }}.tar.gz
-  sha256: 044597ce893d3a1659c38704308a3b1ed58be56e8ead228a4aff1ad6f0e30ec3
+  sha256: dbb8348711ff8a9856b6b6262e033537f2876e63252f3d96db0d60533ea1ed8b
 
 build:
   number: 0
