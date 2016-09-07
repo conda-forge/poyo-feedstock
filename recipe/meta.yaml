@@ -27,7 +27,8 @@ test:
     - pytest
     - python
   commands:
-    - py.test "{{ environ["SRC_DIR"] }}"
+    - cd "{{ environ["SRC_DIR"] }}"
+    - py.test
 
 about:
   home: https://github.com/{{ gh_org }}/{{ gh_repo }}
