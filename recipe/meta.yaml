@@ -1,7 +1,6 @@
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 {% set gh_org = "hackebrot" %}
 {% set gh_repo = "poyo" %}
-
 
 package:
   name: {{ gh_repo }}
@@ -9,8 +8,8 @@ package:
 
 source:
   fn: {{ gh_repo }}-{{ version }}.tar.gz
-  url: https://github.com/{{ gh_org }}/{{ gh_repo }}/archive/{{ version }}.tar.gz
-  sha256: dbb8348711ff8a9856b6b6262e033537f2876e63252f3d96db0d60533ea1ed8b
+  url: https://pypi.io/packages/source/{{ gh_repo[0] }}/{{ gh_repo }}/{{ gh_repo }}-{{ version }}.tar.gz
+  sha256: 8a95d95193eb0838117cc8847257bf17248ef6d157aaa55ea5c20509a87388b8
 
 build:
   number: 0
@@ -19,12 +18,17 @@ build:
 requirements:
   build:
     - python
+    - setuptools
   run:
     - python
 
 test:
   requires:
     - pytest
+    - python
+  commands:
+    - cd "{{ environ["SRC_DIR"] }}"
+    - py.test
 
 about:
   home: https://github.com/{{ gh_org }}/{{ gh_repo }}
