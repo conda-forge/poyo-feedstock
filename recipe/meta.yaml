@@ -23,8 +23,8 @@ requirements:
     - python
 
 test:
-  src_files:
-    - .
+  source_files:
+    - tests
   requires:
     - pytest
     - python
