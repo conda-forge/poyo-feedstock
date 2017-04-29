@@ -1,18 +1,19 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set gh_org = "hackebrot" %}
-{% set gh_repo = "poyo" %}
+{% set name = "poyo" %}
+{% set sha256 = "103b4ee3e1c7765098fe1cabe43f828db2e2a6079646561a2117e1a809f352d6" %}
 
 package:
-  name: {{ gh_repo }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ gh_repo }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ gh_repo[0] }}/{{ gh_repo }}/{{ gh_repo }}-{{ version }}.tar.gz
-  sha256: 8a95d95193eb0838117cc8847257bf17248ef6d157aaa55ea5c20509a87388b8
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -32,7 +33,7 @@ test:
     - py.test
 
 about:
-  home: https://github.com/{{ gh_org }}/{{ gh_repo }}
+  home: https://github.com/{{ gh_org }}/{{ name }}
   license: MIT
   summary: A lightweight YAML Parser for Python
 
