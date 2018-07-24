@@ -14,14 +14,15 @@ Summary: A lightweight YAML Parser for Python
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/poyo-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/poyo-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/poyo-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/poyo-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/poyo-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/poyo-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/poyo-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/poyo-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/poyo/badges/version.svg)](https://anaconda.org/conda-forge/poyo)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/poyo/badges/downloads.svg)](https://anaconda.org/conda-forge/poyo)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-poyo-green.svg)](https://anaconda.org/conda-forge/poyo) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/poyo.svg)](https://anaconda.org/conda-forge/poyo) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/poyo.svg)](https://anaconda.org/conda-forge/poyo) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/poyo.svg)](https://anaconda.org/conda-forge/poyo) |
 
 Installing poyo
 ===============
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
