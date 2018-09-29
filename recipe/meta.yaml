@@ -1,4 +1,4 @@
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 {% set name = "poyo" %}
 
 
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 103b4ee3e1c7765098fe1cabe43f828db2e2a6079646561a2117e1a809f352d6
+  sha256: c34a5413191210ed564640510e9c4a4ba3b698746d6b454d46eb5bfb30edcd1d
 
 build:
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
   noarch: python
 
